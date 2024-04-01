@@ -19,7 +19,7 @@ from amuse.community.evtwin.interface import EVtwin
 from amuse.community.gadget2.interface import Gadget2
 from amuse.community.twobody.twobody import TwoBody
 from amuse.community.huayno.interface import Huayno
-from amuse.community.mesa.interface import MESA
+from amuse.community.mesa_r2208.interface import MESA
 
 import matplotlib
 matplotlib.use("Agg")
@@ -31,9 +31,9 @@ from amuse.plot import pynbody_column_density_plot, HAS_PYNBODY
 def new_working_directory():
     i = 0
     current_directory = os.getcwd()
-    while os.path.exists(os.path.join(current_directory, "run_{0:=03}".format(i))):
+    while os.path.exists(os.path.join(current_directory, "runs/run_{0:=03}".format(i))):
         i += 1
-    new_directory = os.path.join(current_directory, "run_{0:=03}".format(i))
+    new_directory = os.path.join(current_directory, "runs/run_{0:=03}".format(i))
     os.mkdir(new_directory)
     print("Created new directory for output:", new_directory)
     os.mkdir(os.path.join(new_directory, "plots"))

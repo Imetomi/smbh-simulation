@@ -166,7 +166,6 @@ ax.legend(loc="upper left",fontsize=14)
 #If used in Jupyter Notebook, animation will not display only a static image will display with this command
 # anim_2b = animation.FuncAnimation(fig,Animate_2b,frames=1000,interval=5,repeat=False,blit=False,fargs=(h1,h2))
 
-
 #Use the FuncAnimation module to make the animation
 repeatanim=animation.FuncAnimation(fig,Animate,frames=800,interval=10,repeat=False,blit=False,fargs=(head1,head2,head3))
 
