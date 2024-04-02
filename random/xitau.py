@@ -19,7 +19,7 @@ from amuse.community.evtwin.interface import EVtwin
 from amuse.community.gadget2.interface import Gadget2
 from amuse.community.twobody.twobody import TwoBody
 from amuse.community.huayno.interface import Huayno
-from amuse.community.mesa_r2208.interface import MESA
+from amuse.community.seba.interface import SeBa
 
 import matplotlib
 matplotlib.use("Agg")
@@ -459,7 +459,7 @@ def orbit_parameters_plot(semi_major_in,semi_major_out, time, par_symbol="a", pa
 
 
 if __name__ == "__main__":
-    stellar_evolution_code = MESA
+    stellar_evolution_code = SeBa
     sph_code = Gadget2
     #dynamics_code = TwoBody
     dynamics_code = Huayno
